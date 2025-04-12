@@ -13,8 +13,22 @@ export default function Header() {
       setIsScrolled(window.scrollY > 0);
     };
 
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    
+    // Initial check
+    handleResize();
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const navLinks = [

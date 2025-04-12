@@ -8,9 +8,25 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Hot Girl Steps - Your Confidence Begins With Every Step",
-  description: "Track your movement. Boost your glow. Repeat.",
+  title: "Hot Girl Steps – Confidence Starts With a Walk",
+  description: "A step-tracking app made for the girls – track goals, earn sparkles, and glow with every walk.",
   metadataBase: new URL("http://localhost:3000"),
+  keywords: "Hot Girl Walk, Step Tracker, Fitness App for Women, Daily Affirmations, Self-Love App, Walk Tracker, Motivational Walks",
+  openGraph: {
+    title: "Hot Girl Steps – Confidence Starts With a Walk",
+    description: "A step-tracking app made for the girls – track goals, earn sparkles, and glow with every walk.",
+    images: [
+      {
+        url: "/opengraph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hot Girl Steps App",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://hot-girl-steps.com",
+  },
 };
 
 export default function RootLayout({
