@@ -25,11 +25,14 @@ export default function Header() {
   ];
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-gradient-to-b from-pink-500/90 to-purple-500/90 shadow-lg backdrop-blur-sm'
-          : 'bg-transparent'
+          : 'bg-gradient-to-b from-pink-500/80 to-purple-500/80 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -37,11 +40,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div 
-              className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="text-2xl font-bold text-white tracking-tight"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <span className="text-2xl font-bold text-white tracking-tight">HGS</span>
+              Hot Girl Steps
             </motion.div>
           </Link>
 
@@ -69,7 +72,7 @@ export default function Header() {
             >
               <Link
                 href="#"
-                className="bg-white text-purple-600 px-6 py-2.5 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-lg tracking-wide"
+                className="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-lg tracking-wide"
               >
                 Download App
               </Link>
@@ -143,6 +146,6 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </motion.header>
   );
 } 
