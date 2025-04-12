@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "./scripts/kill-ports.sh",
+    "dev:clean": "npm run clean && npm run dev"
   },
   "dependencies": {
     "@fontsource/baloo-2": "^5.0.8",
