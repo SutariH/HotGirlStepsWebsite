@@ -53,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div 
-              className="text-2xl font-bold text-white tracking-tight font-['Baloo_2']"
+              className="text-2xl font-bold text-white tracking-tight font-['Poppins']"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
