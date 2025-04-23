@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
@@ -53,11 +54,18 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div 
-              className="text-2xl font-bold text-white tracking-tight font-poppins"
+              className="relative h-8 w-auto"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Hot Girl Steps
+              <Image
+                src="/HotGirlSteps-full.svg"
+                alt="Hot Girl Steps Logo"
+                width={160}
+                height={32}
+                className="w-auto h-full"
+                priority
+              />
             </motion.div>
           </Link>
 
