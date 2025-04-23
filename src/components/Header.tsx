@@ -50,19 +50,19 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div 
-              className="relative h-12 w-auto"
+              className="relative h-24 w-auto"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               <Image
                 src="/HotGirlSteps-full.svg"
                 alt="Hot Girl Steps Logo"
-                width={240}
-                height={48}
+                width={480}
+                height={96}
                 className="w-auto h-full"
                 priority
               />
