@@ -45,8 +45,8 @@ export default function Header() {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-gradient-to-b from-pink-500/90 to-purple-500/90 shadow-lg backdrop-blur-sm'
-          : 'bg-gradient-to-b from-pink-500/80 to-purple-500/80 backdrop-blur-sm'
+          ? 'bg-gradient-to-b from-pink-500/95 to-purple-500/95 shadow-lg backdrop-blur-md'
+          : 'bg-gradient-to-b from-pink-500/90 to-purple-500/90 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -138,7 +138,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <motion.div
-              className="absolute top-20 left-0 right-0 bg-gradient-to-b from-pink-500/90 to-purple-500/90 shadow-lg"
+              className="absolute top-32 left-0 right-0 bg-gradient-to-b from-pink-500/95 to-purple-500/95 shadow-lg backdrop-blur-md"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}

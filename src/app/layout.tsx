@@ -38,10 +38,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${baloo2.variable}`}>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} antialiased`}>
         <Header />
-        <main className="pt-20 min-h-screen">
-          <div className="max-w-7xl mx-auto px-6 py-8">
+        <main className="pt-32 min-h-screen">
+          <div className="max-w-7xl mx-auto px-6 py-12">
             {children}
           </div>
         </main>
