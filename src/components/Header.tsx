@@ -36,6 +36,7 @@ export default function Header() {
     { href: '/about', label: 'About' },
     { href: '/press', label: 'Press' },
     { href: '/privacy', label: 'Privacy' },
+    { href: '/terms', label: 'Terms' },
   ];
 
   return (
