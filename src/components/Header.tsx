@@ -53,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div 
-              className="text-2xl font-bold text-white tracking-tight font-['Poppins']"
+              className="text-2xl font-bold text-white tracking-tight font-poppins"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -67,7 +67,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/90 hover:text-white transition-colors duration-200 relative group text-lg font-medium tracking-wide font-['Poppins']"
+                className="text-white/90 hover:text-white transition-colors duration-200 relative group text-lg font-medium tracking-wide font-poppins"
               >
                 <motion.span
                   className="block"
@@ -85,7 +85,7 @@ export default function Header() {
             >
               <Link
                 href="#"
-                className="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-lg tracking-wide font-['Poppins']"
+                className="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-lg tracking-wide font-poppins"
               >
                 Download App
               </Link>
@@ -141,7 +141,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-white/90 hover:text-white transition-colors duration-200 text-xl font-medium tracking-wide font-['Poppins']"
+                    className="block text-white/90 hover:text-white transition-colors duration-200 text-xl font-medium tracking-wide font-poppins"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -149,7 +149,7 @@ export default function Header() {
                 ))}
                 <Link
                   href="#"
-                  className="block bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-center text-xl tracking-wide font-['Poppins']"
+                  className="block bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 text-center text-xl tracking-wide font-poppins"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Download App
