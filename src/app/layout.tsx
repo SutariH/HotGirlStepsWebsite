@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { poppins, baloo2 } from "@/lib/fonts";
 
 export const viewport: Viewport = {
@@ -44,9 +45,7 @@ export default function RootLayout({
             {children}
           </div>
         </main>
-        <footer className="p-4 md:p-6 text-center">
-          <p className="text-sm opacity-80">© {new Date().getFullYear()} Hot Girl Steps. All rights reserved.</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
